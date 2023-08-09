@@ -52,3 +52,39 @@ while not game_is_end:
   
     print(f"Your progress: {' '.join(ch_list)}")
         
+
+# This a another way (only use for devlper)
+
+# while not game_is_end:
+
+#         user_input = (input("ENTER  LETTER : ")).lower()
+#         # print(user_input)
+    
+#         for word in range(len(word_chouse)):
+#             latter = word_chouse[word]
+#             # print(f"{word} {word_chouse} {latter}")
+            
+#             if latter == user_input:
+#                 ch_list[word] = user_input
+             
+#             else:
+#                 pass
+#         if user_input not in word_chouse :
+#             lives -= 1  
+#             print(f"your {lives} attend remainig") 
+#             print(stages[-lives-1])  
+#             if lives == 0:
+#                 game_is_end= True
+#                 print("You lose!")
+            
+#         if not "_" in ch_list:
+#             game_is_end= True
+#             print("Game Over!")
+            
+        
+        
+#         f_word = ""
+#         for n in ch_list:
+#              f_word += n
+        
+#         print(f"Your progress {f_word}") 
