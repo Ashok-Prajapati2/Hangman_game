@@ -20,20 +20,30 @@ for n in range(len(word_chouse)):
 print(ch_list)    
 
 game_is_end = False
+
+lives = 6
+
 while not game_is_end:
     user_input = (input("ENTER  LETTER : ")).lower()
     # print(user_input)
-    
+
     for word in range(len(word_chouse)):
         latter = word_chouse[word]
         # print(f"{word} {word_chouse} {latter}")
-    
+        
         if latter == user_input:
             ch_list[word] = user_input
-    
+         
         else:
             pass
-            # print("wrong") 
+    if latter not in user_input :
+        lives -= 1  
+        print(f"your {lives} attend remainig") 
+        print(stages[-lives-1])  
+        if lives == 0:
+            game_is_end= True
+            print("You lose!")
+        
     if not "_" in ch_list:
         game_is_end= True
         print("Game Over!")
@@ -44,4 +54,4 @@ while not game_is_end:
     for n in ch_list:
          f_word += n
     
-    print(f_word)     
+    print(f"Your progress {f_word}")     
