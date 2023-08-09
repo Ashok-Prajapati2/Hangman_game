@@ -8,7 +8,7 @@ from word import word_list
 import img 
 
 print(img.welcome + img.logo)
-
+print("\n your total attend six")
 stages = img.stages
 
 word_choose = random.choice(word_list)
@@ -17,7 +17,7 @@ word_choose = random.choice(word_list)
 ch_list = []
 for n in range(len(word_choose)):
     ch_list += "_"
-print(ch_list)    
+# print(ch_list)    
 
 game_is_end = False
 
