@@ -8,7 +8,7 @@ from word import word_list
 import img 
 
 print(img.welcome + img.logo)
-print("\n your total attend six")
+print("\nYour total  lives : 6")
 stages = img.stages
 
 word_choose = random.choice(word_list)
@@ -18,7 +18,7 @@ ch_list = []
 for n in range(len(word_choose)):
     ch_list += "_"
 # print(ch_list)    
-
+print(f"Guess this word: {' '.join(ch_list)}")
 game_is_end = False
 
 lives = 6
@@ -36,16 +36,17 @@ while not game_is_end:
         
     else:
         lives -= 1  
-        print(f"your {lives} attend remainig") 
+        print(f"\n \nyour {lives} lives remainig") 
         print(stages[-lives-1]) 
         if lives == 0:
             game_is_end= True
-            print(f"You lose! \n Right word is : {word_choose}")
+            print("Game Over!")
+            print(f"You lose! \nRight word is : {word_choose}")
         
     if not "_" in ch_list:
         game_is_end= True
-        print(" You win ")
         print("Game Over!")
+        print("You win ")
         
     
     
