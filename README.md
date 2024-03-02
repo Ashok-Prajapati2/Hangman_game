@@ -19,7 +19,7 @@ Clone the repository to your local machine using the following command:
 Navigate to the repository directory:
 
 
-    cd hangman_game
+    cd Hangman_game
 
 Run the game by executing the Python script:
 
